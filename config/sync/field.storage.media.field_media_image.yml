@@ -16,7 +16,7 @@ settings:
   target_type: file
   display_field: false
   display_default: false
-  uri_scheme: fedora
+  uri_scheme: gs-production
   default_image:
     uuid: ''
     alt: ''

@@ -15,7 +15,7 @@ _core:
 id: creatorsandcontributors
 theme: olivero
 region: sidebar
-weight: -13
+weight: -10
 provider: null
 plugin: 'facet_block:creators_and_contributors'
 settings:
@@ -47,3 +47,11 @@ visibility:
     negate: false
     view_inclusion:
       view-solr_search_content-page_1: view-solr_search_content-page_1
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''

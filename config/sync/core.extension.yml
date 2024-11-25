@@ -5,18 +5,15 @@ module:
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
-  advanced_search: 0
   automated_cron: 0
   basic_auth: 0
   better_exposed_filters: 0
-  big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
   citation_select: 0
   ckeditor5: 0
   coi: 0
-  comment: 0
   config: 0
   config_override_core_fields: 0
   config_update: 0
@@ -30,8 +27,6 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  dgi_image_discovery: 0
   dynamic_page_cache: 0
   editor: 0
   eva: 0
@@ -39,6 +34,7 @@ module:
   facets_summary: 0
   field: 0
   field_group: 0
+  field_group_table: 0
   field_permissions: 0
   field_report: 0
   field_ui: 0
@@ -47,6 +43,8 @@ module:
   filehash: 0
   filter: 0
   flysystem: 0
+  flysystem_gcs: 0
+  flysystem_gcs_cors: 0
   fpa: 0
   geolocation: 0
   hal: 0
@@ -58,7 +56,9 @@ module:
   islandora_breadcrumbs: 0
   islandora_core_feature: 0
   islandora_fits: 0
+  islandora_hocr: 0
   islandora_iiif: 0
+  islandora_iiif_hocr: 0
   islandora_image: 0
   islandora_mirador: 0
   islandora_text_extraction: 0
@@ -75,11 +75,14 @@ module:
   jwt: 0
   key: 0
   language: 0
+  libops: 0
   link: 0
   media: 0
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  metatag_google_scholar: 0
   migrate: 0
   migrate_plus: 0
   migrate_source_csv: 0
@@ -91,7 +94,6 @@ module:
   path: 0
   path_alias: 0
   pdf: 0
-  pgsql: 0
   prepopulate: 0
   rdf: 0
   responsive_image: 0
@@ -101,8 +103,6 @@ module:
   search_api_solr: 0
   serialization: 0
   shortcut: 0
-  sqlite: 0
-  syslog: 0
   system: 0
   taxonomy: 0
   taxonomy_manager: 0
@@ -115,6 +115,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_bootstrap: 0
   views_data_export: 0
   views_field_view: 0
   views_nested_details: 0
@@ -126,4 +127,7 @@ module:
 theme:
   olivero: 0
   claro: 0
+  bootstrap_barrio: 0
+  isle: 0
+  bootstrap_barrio_subtheme: 0
 profile: minimal

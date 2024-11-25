@@ -13,7 +13,7 @@ dependencies:
 id: year
 theme: olivero
 region: sidebar
-weight: -1
+weight: 0
 provider: null
 plugin: 'facet_block:year'
 settings:
@@ -24,6 +24,10 @@ settings:
   context_mapping: {  }
   block_id: year
 visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
   user_status:
     id: user_status
     negate: false
@@ -35,6 +39,10 @@ visibility:
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
   media_source_mimetype:
     id: media_source_mimetype
     negate: false

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - dgi_image_discovery
     - media
     - node
     - taxonomy

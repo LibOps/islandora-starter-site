@@ -682,9 +682,9 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Fedora
+                title: 'Google Cloud Storage'
                 operator: starts
-                value: 'fedora://'
+                value: 'gs-production://'
               2:
                 title: Public
                 operator: starts

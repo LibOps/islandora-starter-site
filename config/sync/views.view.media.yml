@@ -1095,7 +1095,6 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-              fedoraadmin: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -1140,7 +1139,6 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-              fedoraadmin: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -1183,7 +1181,6 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-              fedoraadmin: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -1237,7 +1234,6 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-              fedoraadmin: '0'
             min_placeholder: ''
             max_placeholder: ''
             placeholder: ''
