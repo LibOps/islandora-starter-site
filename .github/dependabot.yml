@@ -15,7 +15,21 @@ updates:
       - dependency-name: "drush/drush"
       - dependency-name: "islandora-rdm/islandora_fits"
       - dependency-name: "islandora/views_nested_details"
+      - dependency-name: "libops/*"
       - dependency-name: "mjordan/islandora_workbench_integration"
     commit-message:
       prefix: "composer update"
       include: "scope"
+    groups:
+      single-pr:
+        applies-to: version-updates
+        patterns:
+        - "drupal/*"
+        - "drush/drush"
+        - "islandora-rdm/islandora_fits"
+        - "islandora/views_nested_details"
+        - "libops/*"
+        - "mjordan/islandora_workbench_integration"
+        update-types:
+        - "minor"
+        - "patch"
