@@ -53,6 +53,7 @@
         "drupal/hal": "^1.0||^2.0",
         "drupal/islandora": "^2.8.1",
         "drupal/islandora_mirador": "^2",
+        "drupal/islandora_vtt": "^1.0@beta",
         "drupal/metatag_google_scholar": "^1.2",
         "drupal/openseadragon": "^2",
         "drupal/pathauto": "^1.12",

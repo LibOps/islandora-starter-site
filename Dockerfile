@@ -1,12 +1,7 @@
-# You should not be editing this file.
+ARG BASE_IMAGE="us-docker.pkg.dev/libops-images/shared/isle-drupal"
+ARG ISLANDORA_TAG=main
+FROM ${BASE_IMAGE}:${ISLANDORA_TAG}
 
-# To override this value, set "tag" in libops.yml
-ARG ISLANDORA_TAG=3.4
+COPY --chown=100:101 . /var/www/drupal
 
-FROM  us-docker.pkg.dev/libops-images/shared/isle-drupal:${ISLANDORA_TAG}
-
-COPY --chown=100:101 . /var/www/drupal/
-
-RUN --mount=type=cache,id=custom-drupal-composer,sharing=locked,target=/root/.composer/cache \
-  composer install -d /var/www/drupal && \
-  chown -R 100:101 /var/www/drupal
+RUN composer install
