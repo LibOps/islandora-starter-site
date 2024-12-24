@@ -52,6 +52,7 @@
         "drupal/fpa": "^4.0",
         "drupal/hal": "^1.0||^2.0",
         "drupal/islandora": "^2.8.1",
+        "drupal/islandora_hls": "^1.0@alpha",
         "drupal/islandora_mirador": "^2",
         "drupal/islandora_vtt": "^1.0@beta",
         "drupal/js_cookie": "^1.0",

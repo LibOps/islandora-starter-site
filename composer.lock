@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a8741dedd91498bb50612afa0f7c939",
+    "content-hash": "a4a78bc8529ee6cece30206c079e0f09",
     "packages": [
         {
             "name": "adci/full-name-parser",
@@ -3887,6 +3887,51 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/islandora",
                 "issues": "https://github.com/Islandora/documentation/issues"
+            }
+        },
+        {
+            "name": "drupal/islandora_hls",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/islandora_hls.git",
+                "reference": "1.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/islandora_hls-1.0.0-alpha1.zip",
+                "reference": "1.0.0-alpha1",
+                "shasum": "6aee13634ed05a9a2efd532dbbc89482e8ee4a36"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/islandora": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha1",
+                    "datestamp": "1733586301",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joecorall",
+                    "homepage": "https://www.drupal.org/user/1144790"
+                }
+            ],
+            "description": "Create streaming audio and video derivatives",
+            "homepage": "https://www.drupal.org/project/islandora_hls",
+            "support": {
+                "source": "https://git.drupalcode.org/project/islandora_hls"
             }
         },
         {
@@ -14320,6 +14365,7 @@
         "drupal/context": 5,
         "drupal/flysystem": 15,
         "drupal/flysystem_gcs_cors": 15,
+        "drupal/islandora_hls": 15,
         "drupal/islandora_vtt": 10,
         "drupal/rest_oai_pmh": 10,
         "drupal/term_merge": 10,
