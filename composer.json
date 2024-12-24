@@ -54,6 +54,7 @@
         "drupal/islandora": "^2.8.1",
         "drupal/islandora_mirador": "^2",
         "drupal/islandora_vtt": "^1.0@beta",
+        "drupal/js_cookie": "^1.0",
         "drupal/metatag_google_scholar": "^1.2",
         "drupal/openseadragon": "^2",
         "drupal/pathauto": "^1.12",
