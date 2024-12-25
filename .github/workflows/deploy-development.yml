@@ -12,6 +12,7 @@ jobs:
     secrets: inherit
     with:
       branch: ${{ github.ref_name }}
+
   ci-cd:
     if: |
       always() &&
@@ -26,6 +27,16 @@ jobs:
       contents: read
       id-token: write
     secrets: inherit
+
+  push-docker:
+    needs: [ci-cd]
+    uses: libops/actions/.github/workflows/build-push-sh.yml@main
+    with:
+      environment: ${{ github.ref_name }}
+    permissions:
+      contents: read
+    secrets: inherit
+
   sync-new-environment:
     needs: [create-environment, ci-cd]
     uses: libops/actions/.github/workflows/sync-db.yml@main

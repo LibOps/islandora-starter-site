@@ -12,3 +12,12 @@ jobs:
       contents: read
       id-token: write
     secrets: inherit
+
+  push-docker:
+    needs: [deploy]
+    uses: libops/actions/.github/workflows/build-push-sh.yml@main
+    with:
+      environment: production
+    permissions:
+      contents: read
+    secrets: inherit
