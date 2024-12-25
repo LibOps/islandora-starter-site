@@ -29,6 +29,7 @@ jobs:
     secrets: inherit
 
   push-docker:
+    if: always() && needs.ci-cd.result == 'success'
     needs: [ci-cd]
     uses: libops/actions/.github/workflows/build-push-sh.yml@main
     with:
