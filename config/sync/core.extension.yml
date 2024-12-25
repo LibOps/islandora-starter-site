@@ -56,6 +56,7 @@ module:
   islandora_breadcrumbs: 0
   islandora_core_feature: 0
   islandora_fits: 0
+  islandora_hls: 0
   islandora_hocr: 0
   islandora_iiif: 0
   islandora_iiif_hocr: 0
@@ -64,6 +65,7 @@ module:
   islandora_text_extraction: 0
   islandora_text_extraction_defaults: 0
   islandora_video: 0
+  islandora_vtt: 0
   islandora_workbench_integration: 0
   jquery_ui: 0
   jquery_ui_autocomplete: 0
@@ -71,8 +73,8 @@ module:
   jquery_ui_menu: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
-  jsonld: 0
   js_cookie: 0
+  jsonld: 0
   jwt: 0
   key: 0
   language: 0
