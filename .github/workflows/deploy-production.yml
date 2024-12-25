@@ -20,4 +20,5 @@ jobs:
       environment: production
     permissions:
       contents: read
+      id-token: write
     secrets: inherit
