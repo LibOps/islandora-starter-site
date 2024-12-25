@@ -35,3 +35,5 @@ The most notable changes after forking have been:
 - Added [drupal/views_bootstrap](https://www.drupal.org/project/views_bootstrap) and applied bootstrap style to solr search
 - Added [drupal/entity_reference_facet_link](https://www.drupal.org/project/entity_reference_facet_link) and applied to entity references with facets on search page
 - Added [drupal/xmlsitemap](https://www.drupal.org/project/xmlsitemap) and configured to expose repository items
+- Added [drupal/islandora_vtt](https://www.drupal.org/project/islandora_vtt) to display VTT files
+- Added [drupal/islandora_hls](https://www.drupal.org/project/islandora_hls) to handle generating streaming audio and video files
