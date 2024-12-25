@@ -18,9 +18,8 @@ The basics are:
 
 ## License
 
-In following with GPLv2, this repo was originally forked from [islandora-devops/islandora-starter-site](https://github.com/islandora-devops/islandora-starter-site).
+This repo was originally forked from [islandora-devops/islandora-starter-site](https://github.com/islandora-devops/islandora-starter-site). The most notable changes after forking have been:
 
-The most notable changes after forking have been:
 - Replaced the fedora flysystem configuration for Drupal file entities and Islandora derivative actions to instead use [drupal/flysystem_gcs](https://www.drupal.org/project/flysystem_gcs)
 - Configured file uploads on media entities to use [drupal/flysystem_gcs_cors](https://www.drupal.org/project/flysystem_gcs_cors) to directly upload files to Google Cloud Storage from the client's web browser
 - Added GitHub Actions to this repo that are required for LibOps functionality
