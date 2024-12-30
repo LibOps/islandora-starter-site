@@ -1,8 +1,10 @@
 {
   extends: [
     'config:best-practices',
-    ':rebaseStalePrs',
-    'customManagers:dockerfileVersions',
+    ':rebaseStalePrs'
+  ],
+  enabledManagers: [
+    'composer'
   ],
   packageRules: [
     {
@@ -18,40 +20,7 @@
       matchPackageNames: [
         '*',
       ],
-    },
-    {
-      matchManagers: [
-        'composer',
-      ],
-      groupName: 'composer updates',
-    },
-    {
-      matchManagers: [
-        'dockerfile',
-      ],
-      groupName: 'Dockerfile updates',
-    },
-    {
-      matchManagers: [
-        'github-actions',
-      ],
-      groupName: 'GitHub Actions updates',
-      schedule: [
-        'after 10pm on Friday',
-      ],
-    },
-    {
-      matchUpdateTypes: [
-        'major',
-      ],
-      groupName: 'all major updates',
-      schedule: [
-        'after 10pm on the first day of the month',
-      ],
-      matchPackageNames: [
-        '*',
-      ],
-    },
+    }
   ],
   labels: [
     'dependencies',
