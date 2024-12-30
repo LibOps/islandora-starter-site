@@ -18,5 +18,5 @@ configuration:
   derivative_term_uri: 'http://pcdm.org/use#ServiceFile'
   mimetype: video/mp4
   args: ''
-  scheme: public
-  path: '[date:custom:Y]-[date:custom:m]/[islandoratokens:media-original-file:filename]-[term:name].mp4'
+  scheme: gs-development
+  path: 'derivatives/[node:nid]/[term:tid].mp4'

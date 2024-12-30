@@ -15,8 +15,8 @@ configuration:
   event: 'Generate Derivative'
   source_term_uri: 'http://pcdm.org/use#OriginalFile'
   derivative_term_uri: 'http://pcdm.org/use#ServiceFile'
-  mimetype: application/gzip
+  mimetype: application/xml
   args: null
   destination_media_type: file
-  scheme: private
+  scheme: gs-development
   path: 'derivatives/hls/[node:nid]/hls.tar.gz'

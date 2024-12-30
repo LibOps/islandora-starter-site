@@ -17,6 +17,6 @@ configuration:
   source_term_uri: 'http://pcdm.org/use#OriginalFile'
   derivative_term_uri: 'http://pcdm.org/use#ThumbnailImage'
   mimetype: image/jpeg
-  args: '-ss 00:00:01.000 -frames 1 -vf scale=100:-2'
-  scheme: public
-  path: '[date:custom:Y]-[date:custom:m]/[islandoratokens:media-original-file:filename]-[term:name].jpg'
+  args: '-ss 00:00:01.000 -frames 1 -vf scale=750:-2'
+  scheme: gs-development
+  path: 'derivatives/[node:nid]/[term:tid].jpg'
