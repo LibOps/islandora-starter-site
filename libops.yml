@@ -1,5 +1,6 @@
 version: 1.0
-islandora-tag: 3.4
+# renovate: datasource=github-releases depName=isle-buildkit packageName=Islandora-Devops/isle-buildkit
+islandora-tag: 3.4.9
 https-firewall: []
 ssh-firewall: []
 blocked-ips: []
