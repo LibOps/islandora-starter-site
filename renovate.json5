@@ -1,4 +1,5 @@
 {
+  branchPrefix: 'renovate-',
   extends: [
     'config:best-practices',
     ':rebaseStalePrs'
@@ -13,13 +14,13 @@
         'patch',
         'digest',
       ],
-      groupName: 'all non-major dependencies',
+      groupName: 'bump dependencies',
       schedule: [
-        'after 10pm on Friday',
+        'after 10pm on Wednesday',
       ],
       matchPackageNames: [
         '*',
-      ],
+      ]
     }
   ],
   labels: [
@@ -29,5 +30,5 @@
   dependencyDashboardOSVVulnerabilitySummary: 'unresolved',
   vulnerabilityAlerts: {
     enabled: true,
-  },
+  }
 }
