@@ -10,5 +10,5 @@ jobs:
       id-token: write
     secrets: inherit
     with:
-      route: "env/del"
+      action: "del"
       branch: ${{ format(github.event.ref, 'refs/heads/', '') }}
