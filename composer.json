@@ -1,11 +1,11 @@
 {
-    "name": "islandora/islandora-starter-site",
+    "name": "libops/islandora-starter-site",
     "description": "Project template for Islandora sites.",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://www.islandora.ca",
+    "homepage": "https://www.libops.io",
     "support": {
-        "docs": "https://islandora.github.io/documentation/",
+        "docs": "https://docs.libops.io/",
         "chat": "https://www.islandora.ca/community#channels-of-communication"
     },
     "repositories": [
@@ -17,10 +17,10 @@
             "type": "package",
             "package": {
                 "name": "library/pdf.js",
-                "version": "2.16.105",
+                "version": "4.10.38",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/mozilla/pdf.js/releases/download/v2.16.105/pdfjs-2.16.105-dist.zip",
+                    "url": "https://github.com/mozilla/pdf.js/releases/download/v4.10.38/pdfjs-4.10.38-dist.zip",
                     "type": "zip"
                 }
             }
@@ -140,23 +140,13 @@
                 "PHP 8.2 deprecation warning": "assets/patches/flysystem-stream-wrapper.patch"
             },
             "drupal/flysystem": {
-                "required_derivative_scheme https://www.drupal.org/project/flysystem/issues/3457193": "https://www.drupal.org/files/issues/2024-07-01/3378738-1.patch"
+                "required_derivative_scheme": "https://www.drupal.org/files/issues/2024-07-01/3378738-1.patch"
             }
         }
-    },
-    "scripts": {
-        "post-root-package-install": [
-            "Islandora\\StarterSite::rootPackageInstall"
-        ]
     },
     "require-dev": {
         "drupal/config_inspector": "^2.1",
         "drupal/devel": "^5.0",
         "drupal/restui": "^1.21"
-    },
-    "autoload": {
-        "classmap": [
-            "assets/IslandoraStarterSite.php"
-        ]
     }
 }
