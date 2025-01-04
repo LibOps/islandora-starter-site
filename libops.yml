@@ -5,8 +5,6 @@ ssh-firewall: []
 blocked-ips: []
 developers:
     joe@libops.io: []
-mariadb: 10.3.39
-solr: 9
 domain-mappings:
     development: []
     production: []
