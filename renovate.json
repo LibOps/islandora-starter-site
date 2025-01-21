@@ -1,0 +1,86 @@
+{
+  "branchPrefix": "renovate-",
+  "extends": [
+    "config:best-practices",
+    ":rebaseStalePrs"
+  ],
+  "enabledManagers": [
+    "composer",
+    "custom.regex"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest"
+      ],
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "groupName": "bump buildkit",
+      "schedule": [
+        "before 10am on Monday"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "groupName": "major buildkit update",
+      "schedule": [
+        "* 0-5 1-7 * 1"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "groupName": "bump composer deps",
+      "schedule": [
+        "after 10pm on Wednesday"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "groupName": "major composer updates",
+      "schedule": [
+        "* 0-5 8-14 * 1"
+      ]
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update buildkit tag in libops.yml",
+      "fileMatch": [
+        "^libops\\.yml$"
+      ],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?) packageName=(?<packageName>.+?)\\sislandora-tag: (?<currentValue>[\\d\\.]+?)"
+      ]
+    }
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "forkProcessing": "enabled",
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboardOSVVulnerabilitySummary": "unresolved",
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}
