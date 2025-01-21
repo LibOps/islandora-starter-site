@@ -70,7 +70,7 @@
         "^libops\\.yml$"
       ],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?) packageName=(?<packageName>.+?)\\sislandora-tag: (?<currentValue>[\\d\\.]+?)"
+        "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?) packageName=(?<packageName>.+?)\\sislandora-tag: (?<currentValue>\\d+\\.\\d+\\.\\d+)"
       ]
     }
   ],
