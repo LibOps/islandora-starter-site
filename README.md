@@ -1,6 +1,6 @@
-# LibOps
+# libops
 
-See [LibOps Development Documentation](https://docs.libops.io/development/) for full information.
+See [libops Development Documentation](https://docs.libops.io/development/) for full information.
 
 ## Overview
 
@@ -22,9 +22,9 @@ This repo was originally forked from [islandora-devops/islandora-starter-site](h
 
 - Replaced the fedora flysystem configuration for Drupal file entities and Islandora derivative actions to instead use [drupal/flysystem_gcs](https://www.drupal.org/project/flysystem_gcs)
 - Configured file uploads on media entities to use [drupal/flysystem_gcs_cors](https://www.drupal.org/project/flysystem_gcs_cors) to directly upload files to Google Cloud Storage from the client's web browser
-- Added GitHub Actions to this repo that are required for LibOps functionality
-- Added a Drupal module required for running on the LibOps platform
-- Upgraded the PDF.js library and added a patch to allow valid LibOps buckets to display in PDF viewer.
+- Added GitHub Actions to this repo that are required for libops functionality
+- Added a Drupal module required for running on the libops platform
+- Upgraded the PDF.js library and added a patch to allow valid libops buckets to display in PDF viewer.
 - Added [bootstrap_barrio](https://www.drupal.org/project/bootstrap_barrio) and created a subtheme of bootstrap_barrio theme called isle
 - Replaced Openseadragon with [Islandora Mirador](https://github.com/islandora/islandora_mirador)
 - Configured hOCR text creation per Islandora Mirador's instructions
